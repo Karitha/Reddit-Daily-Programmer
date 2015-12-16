@@ -1,0 +1,19 @@
+'''
+Reddit Daily Programmer challenge
+[easy] challenge #1
+submitted 3 years ago by nottoobadguy
+create a program that will ask the users name, age, and reddit username. have it tell them
+the information back, in the format:
+your name is (blank), you are (blank) years old, and your username is (blank)
+for extra credit, have the program log this information in a file to be accessed later.
+'''
+
+name = input("What is your name?")
+age = input("How old are you?")
+user_name = input("What is your reddit username?")
+
+f = open("challenge1.txt", "w")
+f.write("Your name is " + name + ", you are " + age + " years old, and your username is " + user_name + ".")
+f.close()
+
+print("Your name is " + name + ", you are " + age + " years old, and your username is " + user_name + ".")
