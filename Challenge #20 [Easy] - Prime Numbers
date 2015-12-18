@@ -1,0 +1,18 @@
+'''
+[3/8/2012] Challenge #20 [easy]
+submitted 3 years ago by rya111113 1
+create a program that will find all prime numbers below 2000
+'''
+
+def prime_n():
+    for i in range(1, 4):
+        print(i, "is a prime number.")
+    for i in range(4, 2000):
+        for j in range(2, i):
+            if i%j == 0:
+                break
+        else:
+            print(i, "is a prime number.")
+                
+
+prime_n()
