@@ -1,0 +1,17 @@
+'''
+[3/8/2012] Challenge #20 [intermediate]
+submitted 3 years ago by rya111113 1
+create a program that will take user input and tell them their age in months,
+days, hours, and minutes
+sample output:
+how old are you? 18
+months : 216, days : 6480, hours : 155520, and minutes : 388800
+'''
+
+age = input("How old are you?")
+months = int(age) * 12
+days = int(age) * 365
+hours = int(days) * 24
+minutes = int(hours) * 60
+
+print ("Months:",int(months), ", Days:",int(days), ", Hours:",int(hours), ", Minutes:",int(minutes))
