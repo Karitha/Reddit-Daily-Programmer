@@ -1,0 +1,37 @@
+'''
+[easy] challenge #2
+submitted 3 years ago * by nottoobadguy
+Hello, coders! An important part of programming is being able to apply your
+programs, so your challenge for today is to create a calculator application
+that has use in your life. It might be an interest calculator, or it might be
+something that you can use in the classroom. For example, if you were in physics
+class, you might want to make a F = M * A calc.
+EXTRA CREDIT: make the calculator have multiple functions! Not only should it
+be able to calculate F = M * A, but also A = F/M, and M = F/A!
+'''
+#Tip Calculator
+
+def tip_amount():
+    meal_total = input("Enter the price of your meal.")
+    tip = 0
+    total_cost = 0
+    quality = input("How was your meal? Great, good, ok or poor?").lower()
+    if quality == "great":
+        tip = int(meal_total) * 0.2
+        total_cost = int(meal_total) * 1.2
+    elif quality == "good":
+        tip = int(meal_total) * 0.15
+        total_cost = int(meal_total) * 1.15
+    elif quality == "ok":
+        tip = int(meal_total) * 0.10
+        total_cost = int(meal_total) * 1.10
+    elif quality == "poor":
+        tip = int(meal_total) * 0.05
+        total_cost = int(meal_total) * 1.05
+    else:
+        print("Error => restart program")
+
+    print("The tip amount is $",tip,", the total amount due is $",total_cost,".")
+# TODO Ensure two decimals
+# TODO Remove space after $
+tip_amount()
